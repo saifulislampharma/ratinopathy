@@ -1,14 +1,15 @@
 import os
 
-image_size=(299,299,3)
-image_size_gen=(299,299)
-num_classes=5
-batch_size=5
-epochs=100
+image_size = (299,299,3)
+image_size_gen = (299,299)
+num_classes = 5
+batch_size = 16
+epochs = 30
 
 
 def root_path():
     return os.path.dirname(__file__)
+
 def data_path():
     return os.path.join(root_path(),"data")
 
@@ -20,10 +21,12 @@ def preprocessing_path():
 
 def src_path():
     return os.path.join(root_path(),"src")
+
 def output_path():
     return os.path.join(root_path(),"output")
 
-
+def weight_path():
+    return os.path.join(root_path(),"weight")
 
 
 
